@@ -27,12 +27,12 @@
 </script>
 
 <script lang="ts">
-	import CreateDriver from '../../../_components/modal/CreateDriver.svelte';
-	import CreateEvent from '../../../_components/modal/createEvent.svelte';
-	import CreateSeason from '../../../_components/modal/CreateSeason.svelte';
 	// @ts-ignore
 	import { Tabulator } from 'tabulator-tables';
 	import { onMount } from 'svelte';
+	import CreateEvent from '../../../../_components/modal/CreateEvent.svelte';
+	import CreateDriver from '../../../../_components/modal/CreateDriver.svelte';
+	import { page } from '$app/stores';
 
 	export let username = '';
 	export let userId = '';
@@ -42,7 +42,9 @@
 
 	let driversTable;
 	let eventsTable;
+	let currentUrl: string;
 	onMount(() => {
+		currentUrl = window.location.href;
 		eventsTable = new Tabulator('#eventsTable', {
 			data: events,
 			columns: [
@@ -70,7 +72,7 @@
 
 <div class="d-flex flex-column justify-content-center align-items-center mt-4">
 	<h3>Seasons</h3>
-	<CreateSeason {username} {userId} {leagueId} {drivers} />
+	<a href="{currentUrl}/createSeason">Create Season Test</a>
 </div>
 
 <hr />

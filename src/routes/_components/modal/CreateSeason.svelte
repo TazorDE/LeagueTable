@@ -63,21 +63,7 @@
 	}
 
 	function addDriverToTeam(index: number) {
-		if (teams[index].drivercount == undefined) {
-			teams[index].drivercount = 0;
-			teams[index].drivers = [];
-		}
-		teams[index].drivercount += 1;
-		teams[index].drivers.push({
-			id: '',
-			events: []
-		});
-
-		let driverDiv: HTMLElement | null = document.getElementById('team' + index + 'driver');
-		if (driverDiv != null) {
-			// add driver select to teamdriver div
-			driverDiv.innerHTML += 0; //component with select that binds to a value
-		}
+		console.log(index);
 	}
 
 	async function sendSeasonCreate(): Promise<void> {
@@ -204,24 +190,11 @@
 						Teams and Drivers
 
 						{#each Array(teamCount) as _undef, i}
-							<div class="form-group">
-								<label class="col-form-label mt-4" for="teamnameInput{i}"> Team {i + 1} </label>
-								<input
-									type="text"
-									class="form-control"
-									placeholder="Teamname"
-									id="teamnameInput{i}"
-									bind:value={teams[i].name}
-								/>
-								<div id="team{i}drivers" />
-								<button
-									type="button"
-									on:click={() => addDriverToTeam(i)}
-									class="btn btn-primary btn-sm">Add Driver to Team</button
-								>
-							</div>
+							Teamname input <br />
+							<button type="button" on:click={() => addDriverToTeam(i)} class="btn btn-primary">
+								Add Driver
+							</button>
 						{/each}
-						{JSON.stringify(drivers)}
 
 						<div class="mt-3">
 							<button type="button" on:click={prevPage} class="btn btn-secondary">
