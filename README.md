@@ -43,32 +43,37 @@ You can preview the production build with `npm run preview`.
 - [x] Database
 - [x] Login System
 ##
-- [x] League create
+- [ ] Leagues
+  - [x] League create
   - [ ] League edit
-- [x] League overview (needs more content)
+  - [x] League overview (needs more content)
 ##
-- [x] Driver create
+- [ ] Drivers
+  - [x] Driver create
   - [ ] Driver edit
   - [ ] Driver delete (only if not referenced anywhere)
 ##
-- [x] Season create (needs way better error handling)
+- [ ] Seasons
+  - [x] Season create (needs way better error handling)
   - [ ] Season edit
-- [ ] Add result to season
+  - [ ] Add result to season
   - [ ] Edit existing result
 ##
-- [x] Event create
-- [ ] Event edit
-- [ ] Event delete (only if not referenced anywhere)
+- [ ] Events
+  - [x] Event create
+  - [ ] Event edit
+  - [ ] Event delete (only if not referenced anywhere)
 ##
 - [x] Management console
-- [x] League management page
-  - [ ] Design
+  - [x] League management page
+    - [ ] Design
 ##
-- [ ] Public league display
-- [ ] Result view
-  - [ ] Season Overview
-  - [ ] Race detail Overview
-  - [ ] Statistics (Season and League)
+- [ ] Public
+  - [ ] Public league display
+    - [ ] Result view
+    - [ ] Season Overview
+    - [ ] Race detail Overview
+    - [ ] Statistics (Season and League)
 ##
 - [ ] Set up Infrastructure
   - [ ] nodeJS Server
