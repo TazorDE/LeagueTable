@@ -36,3 +36,46 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+-----------------------
+# Progress
+- [x] SSR Setup & Framework
+- [x] Database
+- [x] Login System
+##
+- [ ] Leagues
+  - [x] League create
+  - [ ] League edit
+  - [x] League overview (needs more content)
+##
+- [ ] Drivers
+  - [x] Driver create
+  - [ ] Driver edit
+  - [ ] Driver delete (only if not referenced anywhere)
+##
+- [ ] Seasons
+  - [x] Season create (needs way better error handling)
+  - [ ] Season edit
+  - [ ] Add result to season
+  - [ ] Edit existing result
+##
+- [ ] Events
+  - [x] Event create
+  - [ ] Event edit
+  - [ ] Event delete (only if not referenced anywhere)
+##
+- [x] Management console
+  - [x] League management page
+    - [ ] Design
+##
+- [ ] Public
+  - [ ] Public league display
+    - [ ] Result view
+    - [ ] Season Overview
+    - [ ] Race detail Overview
+    - [ ] Statistics (Season and League)
+##
+- [ ] Set up Infrastructure
+  - [ ] nodeJS Server
+  - [ ] Database
+  - [ ] Database Backup
