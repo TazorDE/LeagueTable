@@ -45,6 +45,7 @@ You can preview the production build with `npm run preview`.
 ##
 - [ ] Leagues
   - [x] League create
+    - [ ] streamline design
   - [ ] League edit
   - [x] League overview (needs more content)
   - [ ] Ability for collaborators
